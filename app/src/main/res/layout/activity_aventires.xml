@@ -1,0 +1,836 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blueSF"
+    android:id="@+id/scrollUn">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenaur">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutAv1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/aventureUn"
+                android:id="@+id/aventureU"
+                android:textColor="@color/or"
+                android:layout_alignParentStart="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/LayoutRep"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/rentable"
+                    android:id="@+id/rentAv1"
+                    android:textColor="@color/or"
+                    android:textSize="9.5dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/exp"
+                    android:id="@+id/expU"
+                    android:textColor="@color/orange"
+                    android:textSize="9.5dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/LayoutTempsU"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/temps"
+                android:id="@+id/tempsU"
+                android:textStyle="bold"
+                android:textColor="@color/blanc"
+                android:layout_weight="0"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/minute"
+                android:singleLine="true"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:editable="false"
+                android:autoText="true"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/minute"
+                android:id="@+id/minU"
+                android:textColor="@color/blanc"
+                android:singleLine="true"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_weight="0"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/seconde"
+                android:singleLine="true"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:editable="false"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/seconde"
+                android:id="@+id/secU"
+                android:textColor="@color/blanc"
+                android:layout_weight="0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/LayoutArgentU"
+            android:layout_weight="0"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/titleArgent"
+                android:id="@+id/titleArgentU"
+                android:textColor="@color/blanc"
+                android:textStyle="bold"
+                android:layout_weight="0"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/or"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/or"
+                android:id="@+id/orU"
+                android:textColor="@color/blanc"
+                android:layout_weight="0"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/argent"
+                android:paddingLeft="10dp"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/argent"
+                android:id="@+id/argentU"
+                android:textColor="@color/blanc"
+                android:layout_weight="0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/layoutObjAv1"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/objet"
+                android:id="@+id/objet1"
+                android:textColor="@color/blanc"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/orObjAv1"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/or"
+                android:id="@+id/titleOrObjAv1"
+                android:textColor="@color/blanc"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/argentObjAv1"
+                android:paddingLeft="10dp"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/argent"
+                android:id="@+id/titleArgObjAv1"
+                android:textColor="@color/blanc"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/layoutExpAv1"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/experiences_fr"
+                android:id="@+id/textViewExperience1"
+                android:textColor="@color/blanc"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editTextExp1"
+                android:textColor="@color/blanc"
+                android:editable="true"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/xp"
+                android:id="@+id/textViewExp1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/blanc" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutAv2"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/aventureDeux"
+                android:id="@+id/Aventure2"
+                android:textColor="@color/or"
+                android:layout_alignParentStart="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/layiutRepAv2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/rentable"
+                    android:id="@+id/rentAv2"
+                    android:textColor="@color/or"
+                    android:textSize="9.5dp"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/exp"
+                    android:id="@+id/mExpAv2"
+                    android:textColor="@color/orange"
+                    android:textSize="9.5dp"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:id="@+id/layoutTempsAv2"
+            android:focusableInTouchMode="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Temps : "
+                android:id="@+id/titleTempsAv2"
+                android:textColor="@color/blanc"
+                android:textStyle="bold"
+                android:layout_weight="0"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editMinAv2"
+                android:layout_weight="1"
+                android:textColor="@color/blanc"
+                android:gravity="end"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Min"
+                android:id="@+id/tittleMinAv2"
+                android:textStyle="bold"
+                android:textColor="@color/blanc"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editSecAv2"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Sec"
+                android:id="@+id/titleSecAv2"
+                android:textColor="@color/blanc"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/layoutArgentAv2"
+            android:focusableInTouchMode="false"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/titleArgent"
+                android:id="@+id/textArgentAv2"
+                android:textColor="@color/blanc"
+                android:textStyle="bold"
+                android:paddingRight="5dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editOrAv2"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/or"
+                android:id="@+id/orAv2"
+                android:textColor="@color/blanc"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textStyle="normal"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editArgentAv2"
+                android:paddingLeft="10dp"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/argent"
+                android:id="@+id/argentAv2"
+                android:textColor="@color/blanc"
+                android:paddingLeft="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/kayoutObjAv2"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/objet"
+                android:id="@+id/objAv2"
+                android:textColor="@color/blanc"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/orObjAv2"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/or"
+                android:id="@+id/titleOrObjAv2"
+                android:textColor="@color/blanc"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/argentObjAv2"
+                android:paddingLeft="10dp"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/argent"
+                android:id="@+id/titleArgObjAv2"
+                android:textColor="@color/blanc"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/layoutExpAv2"
+            android:layout_marginRight="010dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/experiences_fr"
+                android:id="@+id/experienceAv2"
+                android:textColor="@color/blanc"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editExpAv2"
+                android:textColor="@color/blanc"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/xp"
+                android:id="@+id/expAv2"
+                android:paddingLeft="10dp"
+                android:textColor="@color/blanc" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutAv3"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/aventureTrois"
+                android:id="@+id/aventure3"
+                android:textColor="@color/or" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:id="@+id/kayoutRepAv3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/rentable"
+                    android:id="@+id/rentAv3"
+                    android:textColor="@color/or"
+                    android:textSize="9.5dp"
+                    android:layout_marginLeft="25dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/exp"
+                    android:id="@+id/mExpAv3"
+                    android:textColor="@color/orange"
+                    android:textSize="9.5dp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutTempsAv3"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Temps : "
+                android:id="@+id/titleTempsAv3"
+                android:textColor="@color/blanc"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editMinAv3"
+                android:layout_weight="1"
+                android:numeric="integer|signed"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Min"
+                android:id="@+id/titleMinAv3"
+                android:textStyle="bold"
+                android:textColor="@color/blanc"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editSecAv3"
+                android:layout_weight="1"
+                android:textColor="@color/blanc"
+                android:gravity="end"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Sec"
+                android:id="@+id/titleSecAv3"
+                android:textColor="@color/blanc"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/layoutArgentAv3"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/titleArgent"
+                android:id="@+id/texttArgentAv3"
+                android:textColor="@color/blanc"
+                android:textStyle="bold"
+                android:paddingRight="5dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editOrAv3"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/or"
+                android:id="@+id/orAv3"
+                android:textColor="@color/blanc"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editArgentAv3"
+                android:paddingLeft="10dp"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/argent"
+                android:id="@+id/argentAv3"
+                android:textColor="@color/blanc"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/layoutObjAv3"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/objet"
+                android:id="@+id/objAv3"
+                android:textColor="@color/blanc"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/orObjAv3"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/or"
+                android:id="@+id/titleOrObjAv3"
+                android:textColor="@color/blanc"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/argObjAv3"
+                android:paddingLeft="10dp"
+                android:gravity="end"
+                android:textColor="@color/blanc"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/argent"
+                android:id="@+id/titleArgUvhAv3"
+                android:textColor="@color/blanc"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/layoutExpAv3"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/experiences_fr"
+                android:id="@+id/experienceAv3"
+                android:textColor="@color/blanc"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/editExpAv3"
+                android:textColor="@color/blanc"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/xp"
+                android:id="@+id/expAv3"
+                android:paddingLeft="10dp"
+                android:textColor="@color/blanc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="15dp"
+            android:id="@+id/layoutButton"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:id="@+id/buttonOk"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:id="@+id/buttonReset"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
